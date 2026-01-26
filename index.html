@@ -3,12 +3,19 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1"/>
     <head>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" 
+            onload="renderMathInElement(document.body);"></script>
+
         <link rel="stylesheet" href="style.css">
     </head>
 <body style="background-color: #000000 ">
 <div class="article">
+
 <h1>
-	<a>
+<a>
 		<strong>Matemathics Explanations of Eulers Identity</strong>
 	</a>
 </h1>
@@ -56,6 +63,13 @@ define amounts, that we could follow in a relationship of quantity, a quantity o
 <div class="contentsPanel">
     <div class="contentsHeader">Contents</div>
     <ul>
+
+<li><span>0.</span><a href="#EulersIdentity"> Eulers Identity</a></li>
+
+
+</ul>
+</div>
+
 <!-- 
  _______           _        _______  _______  _______   _________ ______   _______  _       ___________________________         
  (  ____ \|\     /|( \      (  ____ \(  ____ )(  ____ \  \__   __/(  __  \ (  ____ \( (    /|\__   __/\__   __/\__   __/|\     /|
@@ -68,11 +82,7 @@ define amounts, that we could follow in a relationship of quantity, a quantity o
                                                                                                                                          
 -->
 
-<li><span>0.</span><a href="#EulersIdentity"> Eulers Identity</a></li>
 
-
-</ul>
-</div>
 
 
 <h2 style="font-size: 50px;" id ="EulersIdentity"><strong>Eulers Identity</strong></h2>
@@ -83,47 +93,54 @@ define amounts, that we could follow in a relationship of quantity, a quantity o
 
 <br>
 
-<math  display="block" mathsize="24px">
-  <mtable frame="solid" rowlines="solid" columnlines="solid" framespacing="0.2em 0.2em">
-    <mtr>
-        
-      <mtd><mtext class="white-under">Factorial</mtext></mtd>
-      <mtd><mtext class="white-under">Calculation</mtext></mtd>
-      <mtd><mtext class="white-under">Result</mtext></mtd>
-    </mtr>
-    
-    <mspace height="0.2em"/>
-    <mtr>
-      <mtd><mi>4!</mi></mtd>
-      <mtd><mtext>4 x 3 x 2 x 1</mtext></mtd>
-      <mtd><mn>24</mn></mtd>
-    </mtr>
-    
-    <mtr>
-      <mtd><mi>3!</mi></mtd>
-      <mtd><mtext>24 / 4</mtext></mtd>
-      <mtd><mn>6</mn></mtd>
-    </mtr>
-    
-    <mtr>
-      <mtd><mi>2!</mi></mtd>
-      <mtd><mtext>6 / 3</mtext></mtd>
-      <mtd><mn>2</mn></mtd>
-    </mtr>
-    
-    <mtr>
-      <mtd><mi>1!</mi></mtd>
-      <mtd><mtext>2 / 2</mtext></mtd>
-      <mtd><mn>1</mn></mtd>
-    </mtr>
-
-    <mtr>
-      <mtd><mi>0!</mi></mtd>
-      <mtd><mtext>1 / 1</mtext></mtd>
-      <mtd><mn>1</mn></mtd>
-    </mtr>    
-  </mtable>
-</math>
+<table border="1" cellpadding="10" cellspacing="0" width="60%" align="center">
+  <thead>
+      <tr align="center" height="80">
+          <th>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px">
+                  <mtext>Factorial</mtext>
+              </math>
+          </th>
+          <th>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px">
+                  <mtext>Calculation</mtext>
+              </math>
+          </th>
+          <th>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px">
+                  <mtext>Result</mtext>
+              </math>
+          </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr align="center" height="80">
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>4</mn><mo>!</mo></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>4</mn><mo>×</mo><mn>3</mn><mo>×</mo><mn>2</mn><mo>×</mo><mn>1</mn></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>24</mn></math></td>
+      </tr>
+      <tr align="center" height="80">
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>3</mn><mo>!</mo></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>24</mn><mo>/</mo><mn>4</mn></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>6</mn></math></td>
+      </tr>
+      <tr align="center" height="80">
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>2</mn><mo>!</mo></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>6</mn><mo>/</mo><mn>3</mn></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>2</mn></math></td>
+      </tr>
+      <tr align="center" height="80">
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>1</mn><mo>!</mo></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>2</mn><mo>/</mo><mn>2</mn></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>1</mn></math></td>
+      </tr>
+      <tr align="center" height="80">
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>0</mn><mo>!</mo></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>1</mn><mo>/</mo><mn>1</mn></math></td>
+          <td><math xmlns="http://www.w3.org/1998/Math/MathML" mathsize="24px"><mn>1</mn></math></td>
+      </tr>
+  </tbody>
+</table>
 
 <br>
 <math  display="block" mathsize="20px">
@@ -2198,7 +2215,564 @@ define amounts, that we could follow in a relationship of quantity, a quantity o
 
 <!-- second proof of obtention. -->
 
+<br>
+<br>
 
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+  <mo stretchy="false">(</mo>
+  <mi>a</mi>
+  <mo>+</mo>
+  <mi>b</mi>
+  <msup>
+    <mo stretchy="false">)</mo>
+    <mi>n</mi>
+  </msup>
+  <mo>=</mo>
+  
+  
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mi>n</mi>
+  </msup>
+  <mo>=</mo>
+  <munderover>
+    <mo data-mjx-texclass="OP">∑</mo>
+    <mrow data-mjx-texclass="ORD">
+      <mi>k</mi>
+      <mo>=</mo>
+      <mn>0</mn>
+    </mrow>
+    <mi>n</mi>
+  </munderover>
+  <mrow data-mjx-texclass="ORD">
+    <mrow data-mjx-texclass="OPEN">
+      <mo minsize="2.047em" maxsize="2.047em">(</mo>
+    </mrow>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mi>k</mi>
+    </mfrac>
+    <mrow data-mjx-texclass="CLOSE">
+      <mo minsize="2.047em" maxsize="2.047em">)</mo>
+    </mrow>
+  </mrow>
+  <msup>
+    <mi>a</mi>
+    <mrow data-mjx-texclass="ORD">
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mi>k</mi>
+    </mrow>
+  </msup>
+  <msup>
+    <mi>b</mi>
+    <mi>k</mi>
+  </msup>
+  
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mn>0</mn>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mi>n</mi>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>0</mn>
+  </msup>
+  <mo>+</mo>
+  <mrow>
+    <mo>(</mo>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mn>1</mn>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>1</mn>
+  </msup>
+  <mo>+</mo>
+  <mrow>
+    <mo>(</mo>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mn>2</mn>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>2</mn>
+    </mrow>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+  <mo>+</mo>
+  <mo>&#x22EF;</mo>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+  
+  <mtext>if&#x00A0;</mtext>
+  <mi>k</mi>
+  <mo>=</mo>
+  <mn>0</mn>
+  <mo>,</mo>
+  <mtext>&#x00A0;Binomial Theorem &#x00A0;</mtext>
+
+</math>
+
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+  
+  
+
+  <mrow>
+    <mo>(</mo>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mn>0</mn>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mi>n</mi>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>0</mn>
+  </msup>
+  <mo>=</mo>
+
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>!</mo>
+    </mrow>
+    <mrow>
+      <mn>0</mn>
+      <mo>!</mo>
+      <mo stretchy="false">(</mo>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>0</mn>
+      <mo stretchy="false">)</mo>
+      <mo>!</mo>
+    </mrow>
+  </mfrac>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mi>n</mi>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>0</mn>
+  </msup>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+  <mtext>Total</mtext>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>!</mo>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x22C5;</mo>
+      <mi>n</mi>
+      <mo>!</mo>
+    </mrow>
+  </mfrac>
+ 
+  <mo>&#x22C5;</mo>
+
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mi>n</mi>
+  </msup>
+  <mo>&#x22C5;</mo>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>0</mn>
+  </msup>
+  <mo>=</mo>
+
+  <mn>1</mn>
+ 
+  <mo>&#x22C5;</mo>
+  <mn>1</mn>
+  <mo>&#x22C5;</mo>
+  <mn>1</mn>
+
+  <mo>=</mo>
+  <mn>1</mn>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+  
+  <mtext>if&#x00A0;</mtext>
+  <mi>k</mi>
+  <mo>=</mo>
+  <mn>1</mn>
+  <mo>,</mo>
+  <mtext>&#x00A0;Binomial Theorem &#x00A0;</mtext>
+
+</math>
+
+<br>
+<br>
+
+
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+   
+  <mrow>
+    <mo>(</mo>
+    <mfrac linethickness="0">
+      <mi>n</mi>
+      <mn>1</mn>
+    </mfrac>
+    <mo>)</mo>
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>1</mn>
+  </msup>
+  <mo>=</mo>
+
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>!</mo>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>!</mo>
+      <mo stretchy="false">(</mo>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+      <mo>!</mo>
+    </mrow>
+  </mfrac>
+    
+  </mrow>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>1</mn>
+  </msup>
+<br>
+
+
+<div style="font-size: 24px;">
+$$\frac{n \cdot (n - 1)!}{1 \cdot (n - 1)!} \cdot (1)^{n - 1} \cdot \left(\frac{1}{n}\right)^1 =
+\frac{\cancel{n} \cdot \cancel{(n - 1)!}}{1 \cdot \cancel{(n - 1)!}} \cdot (1) \cdot \left(\frac{1}{\cancel{n}}\right) = 1$$
+</div>
+
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block" mathsize="24px">
+
+  <mtext>Total</mtext>
+  <mo>=</mo>
+  
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x22C5;</mo>
+      <mo stretchy="false">(</mo>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+      <mo>!</mo>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x22C5;</mo>
+      <mo stretchy="false">(</mo>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+      <mo>!</mo>
+    </mrow>
+  </mfrac>
+  
+  <mo>&#x22C5;</mo>
+
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+
+  <mo>&#x22C5;</mo>
+
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>1</mn>
+  </msup> 
+ 
+  <mo>=</mo>
+
+  <mn>1</mn>
+   <mo>&#x22C5;</mo>
+  <mn>1</mn>
+  <mo>&#x22C5;</mo>
+  <mn>1</mn>
+
+  <mo>=</mo>
+  <mn>1</mn>
+
+</math>
+
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x22C5;</mo>
+      <menclose notation="horizontalstrike">
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo>&#x2212;</mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+          <mo>!</mo>
+        </mrow>
+      </menclose>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>&#x22C5;</mo>
+      <menclose notation="horizontalstrike">
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>n</mi>
+          <mo>&#x2212;</mo>
+          <mn>1</mn>
+          <mo stretchy="false">)</mo>
+          <mo>!</mo>
+        </mrow>
+      </menclose>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mi>n</mi>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mtext>Total</mtext>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>n</mi>
+      <mo>!</mo>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>!</mo>
+      <mo stretchy="false">(</mo>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+      <mo stretchy="false">)</mo>
+      <mo>!</mo>
+    </mrow>
+  </mfrac>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mi>n</mi>
+      <mo>&#x2212;</mo>
+      <mn>1</mn>
+    </mrow>
+  </msup>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>n</mi>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mn>1</mn>
+  </msup>
+</math>
 
 <br>
 <br>
@@ -2887,6 +3461,7 @@ _______           _        _______  _______  _______    _______  _______        
 
 <br>
 <br>
+
 
 <!-- End -->
 
@@ -4210,197 +4785,264 @@ _______           _        _______  _______  _______    _______  _______        
       <mo>&#x212f;</mo>
       
       </math>
+      <br>
+      <br>
+      <br>
+
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <menclose notation="updiagonalstrike">
+          <mi>x</mi>
+        </menclose>
+      </math>
+
+      <br>
+      <br>
+
+
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <menclose notation="updiagonalstrike downdiagonalstrike">
+          <mi>n</mi>
+          <mo>+</mo>
+          <mn>1</mn>
+        </menclose>
+      </math>
+
+      <br>
+      <br>
+
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mi>x</mi>
+              <mo>&#x22C5;</mo>
+              <menclose notation="updiagonalstrike" mathcolor="red">
+                <mn>5</mn>
+              </menclose>
+            </mrow>
+            <menclose notation="updiagonalstrike" mathcolor="red">
+              <mn>5</mn>
+            </menclose>
+          </mfrac>
+          <mo>=</mo>
+          <mi>x</mi>
+        </mrow>
+      </math>
+
+      <br>
+      <br>
+
+      <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+        <mfrac>
+          <mrow>
+            <msub>
+              <mi>a</mi>
+              <mrow>
+                <mi>n</mi>
+                <mo>&#x2212;</mo>
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>&#x22C5;</mo>
+            <menclose notation="updiagonalstrike" mathcolor="blue">
+              <mrow>
+                <mo>(</mo>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mn>1</mn>
+                <mo>)</mo>
+              </mrow>
+            </menclose>
+          </mrow>
+          <menclose notation="updiagonalstrike" mathcolor="blue">
+            <mrow>
+              <mi>n</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </menclose>
+        </mfrac>
+      </math>
+
+
+      <br>
+      <br>
+
+      <math>
+        <menclose notation="updiagonalstrike">
+          <mi>x</mi>
+        </menclose>
+      </math>
+      
+      <br>
+      <br>
+
+      <math>
+        <mfrac>
+          <menclose notation="updiagonalstrike">
+            <mn>2</mn>
+          </menclose>
+          <mn>4</mn>
+        </mfrac>
+      </math>
+
+      
+      <br>
+      <br>
+
+    
+      <br>
+      <br>
+      <math>
+        <menclose notation="updiagonalstrike">
+          <mn>5</mn>
+        </menclose>
+      </math>
+      
+
+      <br>
+      <br>
+      <math>
+        <mrow>
+          <mn>10</mn>
+          <mo>+</mo>
+          <menclose notation="updiagonalstrike">
+            <mfrac>
+              <mn>3</mn>
+              <mn>3</mn>
+            </mfrac>
+          </menclose>
+        </mrow>
+      </math>
+      
+
+      <br>
+      <br>
+      <math display="block">
+        <menclose notation="updiagonalstrike">
+          <mi>x</mi>
+        </menclose>
+      </math>
+      
+      <br>
+      <br>
+      <math display="block">
+        <menclose notation="downdiagonalstrike">
+          <mi>x</mi>
+        </menclose>
+      </math>
+      
+      <br>
+      <br>
+      <math display="block">
+        <menclose notation="updiagonalstrike downdiagonalstrike">
+          <mi>x</mi>
+        </menclose>
+      </math>
+      
+      <br>
+      <br>
+
+      <math display="block">
+        <mover>
+          <menclose notation="updiagonalstrike">
+            <mi>x</mi>
+          </menclose>
+          <mn>0</mn>
+        </mover>
+      </math>
+      
+      <br>
+      
+
+      <math  display="block" mathsize="24px">
+        <mtable frame="solid" rowlines="solid" columnlines="solid" framespacing="0.2em 0.2em">
+          <mtr>
+              
+            <mtd><mtext class="white-under">Factorial</mtext></mtd>
+            <mtd><mtext class="white-under">Calculation</mtext></mtd>
+            <mtd><mtext class="white-under">Result</mtext></mtd>
+          </mtr>
+          
+          <mspace height="0.2em"/>
+          <mtr>
+            <mtd><mi>4!</mi></mtd>
+            <mtd><mtext>4 x 3 x 2 x 1</mtext></mtd>
+            <mtd><mn>24</mn></mtd>
+          </mtr>
+          
+          <mtr>
+            <mtd><mi>3!</mi></mtd>
+            <mtd><mtext>24 / 4</mtext></mtd>
+            <mtd><mn>6</mn></mtd>
+          </mtr>
+          
+          <mtr>
+            <mtd><mi>2!</mi></mtd>
+            <mtd><mtext>6 / 3</mtext></mtd>
+            <mtd><mn>2</mn></mtd>
+          </mtr>
+          
+          <mtr>
+            <mtd><mi>1!</mi></mtd>
+            <mtd><mtext>2 / 2</mtext></mtd>
+            <mtd><mn>1</mn></mtd>
+          </mtr>
+      
+          <mtr>
+            <mtd><mi>0!</mi></mtd>
+            <mtd><mtext>1 / 1</mtext></mtd>
+            <mtd><mn>1</mn></mtd>
+          </mtr>    
+        </mtable>
+      </math>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div style="font-size: 24px;">
+          <p>Quadratic Formula:</p>
+          $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+      
+          <p>Cancellation Example:</p>
+          $$\frac{x \cancel{y}}{\cancel{y}} = x$$
+      
+          <p>Matrix:</p>
+          $$\begin{matrix} 1 & 0 \\ 0 & 1 \end{matrix}$$
+          $$\frac{a^2 - b^2}{a - b} = \frac{(a+b)\cancel{(a-b)}}{\cancel{(a-b)}} = a+b$$
+      
+      
+          </div> 
+      
 
 
 
 </div>
 
-
-
-
-<br>
-
-<!-- <h2 id ="WebsiteForContentComputer"><strong> Website For content on set up Computer</strong></h2>
-<h1><b><a href="https://andraelity.github.io/WebsiteUpdates-Important-Information/" > https://andraelity.github.io/WebsiteUpdates-Important-Information/ </a></b></h1>
-
-<p>
-	The contents of this website could allow you to modify the code in the way necessary to produce the elements required for shader comprehension.
-</p>
-	
-
-<img src='Img/CodeImportant.gif' alt="logo">
-
-<br> -->
-
-<!-- <h2 id ="WebsiteForShaders0"> <strong> How to write Shaders within Unity</strong> </h2>
-<h1><b><a href="https://andraelity.github.io/ShadersUpdatesWeb/" > https://andraelity.github.io/ShadersUpdatesWeb/ </a></b></h1>
-
-
-<p>
-	Within this website you could visualize the shaders that could be created within unity, this is the first run.
-
-</p> -->
-
-
-<!-- <p>
-
-I am noticing that each time I need to updat the reposite i'm required to create a new one to verify the commands, by this time I should already be able to remember the full name of the commands
-
-</p>
-
-
 <br>
 <br>
 
-<h2 id ="Details-PC-UnityLog"> <strong>Details of the PC I am currently using </strong> </h2>
-<p>
-	the next details your going to review are the elements provided by the api of UNITY which allows the user to verify the elements and current caracteristics of the machine, the caracteristics necessary to understand the properties of the hardware, and the detail specifications required for future use, when completing analysis on particular dimensions. and precise computation.
 
-</p>
-
-<br>
-<br>
-<hr style="height:10px;border-width:-4;color:gray;background-color:black">
-
-<pre>
-</pre>
-
-
-<hr style="height:10px;border-width:-4;color:gray;background-color:black">
-
-
-<h2 id ="How-To-Add-Extention"> <strong> How to add a extension file to be open with specific style in Notepad++ </strong></h2>
-
-
-<p>
-
-I enjoy the the idea of writing code within GPU, and I was trying to set up the environment in Notepad++, style, fonts, and layaout, everything went correct till the moment I tried to use the default method to open extension with predefined style, It just wont work, I was trying to open a .shader file (Unite type file), with c++(cpp), for some reason the default method wasnt working, so instead I was reaquired to process the next steps.
-
-</p>
-
-<p class="subheading"> <strong> Open Appdata folder </strong></p>
-<p> Press "WindowsKey + R" this would open the Run window, then you need to type Appdata, then press ok, or "Enter key", this would open the next folder
-<br>
-<img src='Img/OpenAppdata.png' alt="logo">
-
-
-<p class="subheading"> <strong> Open langx.xml file </strong></p>
-<p> What you need to do next is open the next path in the AppData folder </p>
-<p> "C:\Users\Elity\AppData\Roaming\Notepad++" </p>
-<p> Once you are there you need to open the langx.xml file with a text editor, you could use windows default notepad, or even the same notepad++.
-<br>
-<img src='Img/OpenFileXml.png' alt="logo">
-
-<p class="subheading"> <strong> Add the extension in the langx.xml file</strong></p>
-<p> The next step would be search for language type, you want to use to open related files with similar styles </p>
-<p> In this particular case I wanted to open files with extensions <br>".shader"<br> ".compute"<br> ".hlsl"<br> ".cginc"<br>  </p>
-<p> Once you have added the languages that you needed, save the file and re-open notepad++, if you used notepad++ to edit the langx.xml file you need to close and re-open the program to check the changes effected.</p>
-
-
-<br>
-<img src='Img/AddExtentions.png' alt="logo">
-<img src='Img/CheckExtentions.png' alt="logo">
-
-<br>
-<br>
-<br>
-<p> Remember that you must check before if the extension could be added normally with the options offer by default.</p>
-<br>
-<img src='Img/CheckExtentions2.png' alt="logo">
-
-
-
-<h2 id ="Abier3comp"> <strong> Why Mechanical keyboards </strong></h2>
-
-
-<p>
-
-	Thanks to the properties mechanical keyboards provide, like its easiness and enjoyment of typing experience, and its exponential continual use in dayly activities provide us with a motion to implement in this structure we want to represent, this structure we want to enable, the capability to provide more structures in the current motion we are trying to provide, we are trying to express, the capability to set more functions and visions by its veriable and user experience of smooth keypressing actions a mechanical keyboard provide, enhancing by this vision the production of more components, the production of more data, the production of more actions and behaviors to present in the current field we want to improve.
-
-
-</p>
-
-
-
-
-<h2 id="TypingSpeed"><p style = "color:#B3B6B7"> <font size = "+3"> <strong> TYPING EXPERIENCE OVER 170 WORDS PER MINUTE (WPM) </strong> </font> </p>
-
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=oxN1C2QQUIE&ab_channel=DrTypewriter"><strong> https://www.youtube.com/watch?v=oxN1C2QQUIE&ab_channel=DrTypewriter</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=imtiA8v06Yg&ab_channel=mypanupat"><strong> https://www.youtube.com/watch?v=imtiA8v06Yg&ab_channel=mypanupat</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=aGIn_TXk-KY&ab_channel=NoThisIsJohn"><strong> https://www.youtube.com/watch?v=aGIn_TXk-KY&ab_channel=NoThisIsJohn</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=-tpsAj29Hy4&ab_channel=slekap"><strong> https://www.youtube.com/watch?v=-tpsAj29Hy4&ab_channel=slekap</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=8Ixtfo3I4VE&ab_channel=StenoKeyboards"><strong> https://www.youtube.com/watch?v=8Ixtfo3I4VE&ab_channel=StenoKeyboards</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=kOu7yY7qiik&ab_channel=WilliamKuwata"><strong> https://www.youtube.com/watch?v=kOu7yY7qiik&ab_channel=WilliamKuwata</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=WLu6yg3Jf0k&ab_channel=DanielChen"><strong> https://www.youtube.com/watch?v=WLu6yg3Jf0k&ab_channel=DanielChen</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=A_Z3CmBQlHg&ab_channel=PierreM"><strong> https://www.youtube.com/watch?v=A_Z3CmBQlHg&ab_channel=PierreM</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=i24xrmkbX4g&ab_channel=joshu"><strong> https://www.youtube.com/watch?v=i24xrmkbX4g&ab_channel=joshu</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=80_3-BHmuIQ&ab_channel=LMStrength"><strong> https://www.youtube.com/watch?v=80_3-BHmuIQ&ab_channel=LMStrength</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=FdkQ94mEsPo&ab_channel=Noba-osu%21"><strong> https://www.youtube.com/watch?v=FdkQ94mEsPo&ab_channel=Noba-osu%21</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=4NjleF5c9wc&ab_channel=chakk"><strong> https://www.youtube.com/watch?v=4NjleF5c9wc&ab_channel=chakk</strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=A0IM-2zdNhY&ab_channel=shrekt"><strong>https://www.youtube.com/watch?v=A0IM-2zdNhY&ab_channel=shrekt </strong></a></p>
-<p><a target = "_blank" href = "https://www.youtube.com/watch?v=a2hVHbqLUaU&ab_channel=Yada"><strong>https://www.youtube.com/watch?v=a2hVHbqLUaU&ab_channel=Yada </strong></a></p>
-
-<h2 id ="Abier2comp"> <a>The necessity for multi screen</a></h2>
-
-
-<img src='Img/StackMonitor.png' alt="logo">
-<p></p>
-<img src='Img/StackMonitor2.png' alt="logo">
-<p></p>
-<img src='Img/StackMonitor3.png' alt="logo">
-
-<p>
-
-	Si ordenamos las propiedades de tal forma que se activen los contenidos antes mencionados lograremos que los individuos generen una actividad practica centrada en la modulacion y vision y exponenciacion de misterios centrados en la creacion de cultura, en la creacion de propiedades sistemicas, con el unico proposito de la maximizacion del contenido en produccion, con el unico objetivo de lograr generar una respuesta analitica sobre el lenguage que se conoce por experiencia propia se puede lograr, se puede comunicar y expresar, es una combinacion de pantallas en miras de la produccion de mas propositos, unir los elementos de trabajo en busqueda de una idea a alcanzar, una idea a producir, una idea a orientar, una idea necesaria para ubicar las sensaciones de los involucrados siempre hacia la determinacion de sus entendimientos.
-
-	Ya que las pantallas promueven la construccion de mas entidades de software de caracter gamificante, entidades de software de carater practico, generando con ello nuevas rutas interactivas, generando con ello nuevas rutas practicas sobre el modelo, generando propiedades las cuales mejorar a medida que centramos la edificacion de coherencias sobre la estructura que se desea aplicar, mejorando como las relaciones de poder se producen al momento de enfrentar las partes hacia si mismas, como las relaciones interactivas de los movimientos de los sujetos entran a participar en la definicion de procesos, ser capaces de jugar a crear y crear todo lo que nos sea permitido, creando y formulando, pensando y detallando, activando y concentrando todas las mociones en torno a la edificacion de los procesos de entendimiento.
-
-</p>
-
-
-
-<h2 id ="StenoMachine"><a> Stenographer synonym of someone who knows how to type really really fast</a></h2>
-
-<p>
-
-	There is this machine, court reporters use in trials when they want to take note of each single word the parties are communicating, how the words in this conversations between the judge and the litiganst, this machine allow the person in use of it, to write pages at least at 200 words per minute and you coudl think that this machine works similarly as a keyboard but you're wrong if you think that it behaves the same, cuz the stenegraph works as a combination of keys that allow the user to write a word without needing to press all the characters that build and construct it, the behavior it enable is a way to tell a computer to remember a previously setted word by the stenographer in order to type it faster, some example of this behaviour could be something like:
-
-</p>
-
-
-<img src='Img/StenoMachine.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine2.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine3.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine4.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine5.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine6.png' alt="logo">
-<p></p>
-<img src='Img/StenoMachine7.png' alt="logo">
-
-<h2 id ="Abierta3Comp"><a> Games and typing</a></h2>
-
-
-<p>
-
-	If i want to create this idea, if i want to materilize the continual thinking i am approaching each time i set my mind in action, i can acquire a piece of totality, i can obtain a piece of expression, i can generate a movement of personality, a movement of qualities described as part of the whole expression, as a piece of the entirety movement, the entirety expression of this field of work, an enviroment setted as a conjunction of elements an enviroment setted as a reunion of qualities, an enviroment described only by the well designed parts of this current feeling, of this current transformation of the world, of how the meanings can be united into a meaningful and valuable production of combinations.
-
-</p>
- -->
-
-<p>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+    </script>
 
 	
-
-</p>
-	
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery </script>
-        <script src="script.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+        <!-- <script>window.jQuery </script> -->
+        <!-- <script src="script.js"></script> -->
 
 
     </body>
